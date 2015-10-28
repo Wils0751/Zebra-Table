@@ -1,0 +1,63 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+table {
+  width:80%;
+	max-width: 1500px;
+	min-width: 600px;
+	margin: 1em auto;
+	border-collapse:collapse;
+	overflow: hidden;
+}
+
+
+th{
+	font-size: 25px;
+	padding: 1rem;
+	border: 1px solid black;
+	
+}
+td{
+	border-top:1px solid black;
+	padding:1rem;
+	text-align:center;
+	border-right:1px solid black;
+	position: relative;
+	border-left: 1px solid black;
+	
+}
+caption{
+	text-align:center;
+	padding:1em;
+	color:black;
+	font-size: 25px;
+}
+th:last-child,td:last-child {
+	border-right: 2px solid black;
+}
+
+tr:hover {
+  background-color: yellow;
+}
+
+td:hover::after,
+thead th:not(:empty):hover::after
+ { 
+  content: '';  
+  height: 10000px;
+  left: 0;
+  position: absolute;  
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+}
+
+td:hover::after,
+th:hover::after {
+  background-color: yellow;
+}
+/*Citations*/
+/*http://codepen.io/chriscoyier/pen/pvwmaR*/

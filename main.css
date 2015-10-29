@@ -30,7 +30,7 @@ caption{
     font-style: italic;
 }
 th:last-child,td:last-child {
-	border-right: 5px solid black;
+	border-right: 2px solid black;
 }
 tr:hover {
  	background-color: hsl(0, 0%, 100%);;
